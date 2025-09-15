@@ -121,6 +121,33 @@ closeCalendarBtn.addEventListener("click", () => calendarModal.classList.remove(
 let currentDate = new Date();
 const monthYear = document.getElementById("calendar-month-year");
 const tbody = document.querySelector("#calendar-table tbody");
+tasks.forEach(t => {
+    let show = false;
+    const taskDate = new Date(t.dueDate);
+    const cellDate = new Date(date.getFullYear(), date.getMonth(), d);
+
+    if(t.recurrence === "None") {
+        show = t.dueDate === dateStr;
+    } else if(t.recurrence === "Daily") {
+        show = cellDate >= taskDate;
+    } else if(t.recurrence === "Every 2 Days") {
+        const diff = Math.floor((cellDate - taskDate) / (1000*60*60*24));
+        show = diff >= 0 && diff % 2 === 0;
+    } else if(t.recurrence === "Weekly") {
+        const diff = Math.floor((cellDate - taskDate) / (1000*60*60*24));
+        show = diff >= 0 && diff % 7 === 0;
+    } else if(t.recurrence === "Monthly") {
+        show = cellDate.getDate() === taskDate.getDate() && cellDate >= taskDate;
+    }
+
+    if(show) {
+        const taskDiv = document.createElement("div");
+        taskDiv.textContent = t.text;
+        taskDiv.classList.add("task");
+        taskDiv.classList.add(`priority-${t.priority.toLowerCase()}`);
+        cell.appendChild(taskDiv);
+    }
+});
 
 function renderCalendar(date){
     tbody.innerHTML = "";

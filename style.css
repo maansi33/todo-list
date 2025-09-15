@@ -26,13 +26,13 @@ body.dark-mode { background: #1e1e1e; color: #eee; }
     color: white; cursor: pointer;
 }
 .home-art {
-    font-family: 'Courier New', monospace; /* must be monospaced */
+    font-family: 'Courier New', monospace;
     font-size: 20px;
     color: #ffb6c1;
-    white-space: pre;       /* preserve spaces and line breaks */
-    display: inline-block;  /* treat as a block for centering */
-    margin: 0 auto 20px;    /* center horizontally with bottom spacing */
-    text-align: left;       /* keep ASCII art aligned correctly internally */
+    white-space: pre;      
+    display: inline-block;  
+    margin: 0 auto 20px;    
+    text-align: left;       
 }
 
 
@@ -111,14 +111,14 @@ li button { padding: 8px 14px; border-radius: 15px; border: none; background: #f
 /* Calendar modal */
 #calendar-modal {
     position: fixed; top: 0; left: 0; right:0; bottom:0;
-    background: rgba(0,0,0,0.5); /* dark overlay */
+    background: rgba(0,0,0,0.5);
     display: none; justify-content: center; align-items: center; z-index: 999;
 }
 #calendar-modal.active { display: flex; }
 
 /* Calendar container */
 #calendar-container {
-    background: #fff;       /* solid white background */
+    background: #fff;      
     padding: 25px;
     border-radius: 20px;
     max-width: 500px;

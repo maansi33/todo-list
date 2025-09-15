@@ -84,6 +84,19 @@ li .text { flex: 1; cursor: pointer; font-size: 17px; }
 .priority-medium { background-color: #FFC107; color: black; }
 .priority-high { background-color: #F44336; }
 
+const recurrenceInput = document.getElementById("recurrence");
+
+// Inside addBtn event listener
+const task = {
+    text,
+    dueDate: dueDateInput.value,
+    priority: priorityInput.value,
+    category: categoryInput.value,
+    recurrence: recurrenceInput.value, // NEW
+    completed: false
+};
+
+
 /* Due date */
 .due-date { font-size: 13px; font-weight: 500; }
 .due-date.overdue { color: #ff4c4c; font-weight: bold; }

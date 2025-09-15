@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home-page" class="home-container">
+        <pre class="home-art">
+  ₊✩‧₊˚౨ৎ˚₊✩‧₊
+       ╱|、
+     (˚ˎ 。7  
+      |、˜〵          
+     じしˍ,)ノ-`✮´-
+        </pre>
+        <h1>Welcome to Your Todo App</h1>
+        <button id="start-btn">Get Started</button>
+    </div>
+
+    <!-- Main App Container -->
+    <div class="todo-container hidden">
+        <h1>Todo List</h1>
+
+        <!-- Input group -->
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <input type="date" id="due-date">
+            <select id="priority">
+                <option value="Low">Low Priority</option>
+                <option value="Medium" selected>Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+            <select id="category">
+                <option value="General">General</option>
+                <option value="Work">Work</option>
+                <option value="School">School</option>
+                <option value="Social">Social</option>
+                <option value="Travel">Travel</option>
+                <option value="Groceries">Groceries</option>
+            </select>
+            <button id="add-btn">Add</button>
+        </div>
+
+        <!-- Search -->
+        <div class="search-group">
+            <input type="text" id="search-input" placeholder="Search tasks...">
+        </div>
+
+        <!-- Dashboard -->
+        <div id="dashboard">
+            <span>Total: <span id="total-tasks">0</span></span> |
+            <span>Completed: <span id="completed-tasks">0</span></span> |
+            <span>Pending: <span id="pending-tasks">0</span></span>
+        </div>
+
+        <!-- Categories container -->
+        <div id="categories-container"></div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <button id="filter-all">All</button>
+            <button id="filter-active">Active</button>
+            <button id="filter-completed">Completed</button>
+            <button id="calendar-btn">📅 Calendar</button>
+            <button id="dark-mode-toggle">🌙</button>
+        </div>
+
+        <!-- Calendar Modal -->
+	<div id="calendar-modal">
+  	  <div id="calendar-container">
+      	  <button class="close-btn">✖</button>
+     	    <div class="calendar-header">
+            <button id="prev-month">&#8592;</button>
+            <span id="calendar-month-year"></span>
+            <button id="next-month">&#8594;</button>
+        </div>
+        <table id="calendar-table">
+            <thead>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
+                    <th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

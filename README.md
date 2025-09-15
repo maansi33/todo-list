@@ -1,61 +1,66 @@
-﻿  ˶ᵔ ᵕ ᵔ˶ Todo List App ⋆˚꩜.ᐟ
+# ˶ᵔ ᵕ ᵔ˶ Todo List App ⋆˚꩜.ᐟ
 A cute and interactive Todo List web application built with HTML, CSS, and JavaScript. Organize your tasks, track priorities, and view tasks on a calendar!
+
+``` text
 ₊✩‧₊˚౨ৎ˚₊✩‧₊
-╱|、
-(˚ˎ 。7
-|、˜〵
-じしˍ,)ノ-`✮´-
+       ╱|、
+     (˚ˎ 。7
+      |、˜〵          
+     じしˍ,)ノ-`✮´-
+```
 
-⋆˚࿔ Features
-Add, edit, and delete tasks
-Set due dates and priorities (Low, Medium, High)
-Categorize tasks (Work, School, Social, Travel, Groceries, General)
-Search tasks by keywords
-Filter tasks: All, Active, Completed
-Interactive calendar to view tasks by date
-Dark mode toggle for night-time usage
-Cute ASCII art on the home page
-Responsive and visually appealing design
+## ⋆˚࿔ Features
+- Add, edit, and delete tasks
+- Set due dates and priorities (Low, Medium, High)
+- Categorize tasks (Work, School, Social, Travel, Groceries, General)
+- Search tasks by keywords
+- Filter tasks: All, Active, Completed
+- Interactive calendar to view tasks by date
+- Dark mode toggle for night-time usage
+- Cute ASCII art on the home page
+- Responsive and visually appealing design
 
-⋆˚࿔ Project Structure
+## ⋆˚࿔ Project Structure
+```text
 todo-list/
-├── index.html        # Main HTML page
-├── style.css         # All styling and dark mode support
-├── script.js         # JavaScript logic for tasks, filters, calendar
-└── README.md         # Project documentation
+├── index.html # Main HTML page
+├── style.css # All styling and dark mode support
+├── script.js # JavaScript logic for tasks, filters, calendar
+└── README.md # Project documentation
+```
+## ⋆˚࿔ How to Run Locally
+1. Clone the repository:
+```bash
+git clone https://github.com/maansi33/todo-list.git
+cd todo-list
+```
 
+2. Open index.html in your browser:
+- Double-click index.html
+- OR serve with a live server (VS Code extension recommended)
 
-
-⋆˚࿔ How to Run Locally
-Clone the repository
-git clone https://github.com/maansi33/todo-list.git cd todo-list
-Open index.html in your browser:
-Double-click index.html
-OR serve with a live server (VS Code extension recommended)
-
-⋆˚࿔ Screenshots
+## ⋆˚࿔ Screenshots
 Home Page
-
+![Home Page Screenshot](https://github.com/user-attachments/assets/89549c63-3f20-45e2-80fe-ef4110a9b8eb)
 Todo List Page
+![Todo List Page Screenshot](https://github.com/user-attachments/assets/e7ee74f0-304f-4e8c-b124-c1ed0e68e213)
 
+## ⋆˚࿔ Usage
+- Click "Get Started" on the home page to enter your tasks
+- Add tasks with due date, priority, and category
+- Click the calendar icon to view tasks by date
+- Use the dark mode toggle for a darker theme
+- Filter tasks using the filter buttons
 
-⋆˚࿔ Usage
-Click "Get Started" on the home page to enter your tasks.
-Add tasks with due date, priority, and category.
-Click the calendar icon to view tasks by date.
-Use the dark mode toggle for a darker theme.
-Filter tasks using the filter buttons.
+## ⋆˚࿔ Technologies Used
+- HTML5
+- CSS3 (Flexbox, Gradients, Dark Mode)
+- JavaScript (DOM manipulation, local storage optional)
 
-⋆˚࿔ Technologies Used
-HTML5
-CSS3 (Flexbox, Gradients, Dark Mode)
-JavaScript (DOM manipulation, local storage optional)
+## ⋆˚࿔ Author
+Maansi ᯓ★
+- [GitHub Profile](https://github.com/maansi33)
 
-⋆˚࿔ Author
-Maansi
-GitHub Profile
-
-⋆˚࿔ Notes
-The app is fully front-end; tasks are not saved online unless you implement local storage or a backend.
-For a production version, you can add persistent storage or deploy on GitHub Pages.
-
+## ⋆˚࿔ Notes
+- The app is fully front-end; tasks are not saved online unless you implement local storage or a backend
+- For a production version, you can add persistent storage or deploy on GitHub Pages

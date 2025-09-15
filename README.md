@@ -15,9 +15,9 @@ A cute and interactive Todo List web application built with HTML, CSS, and JavaS
 - Categorize tasks (Work, School, Social, Travel, Groceries, General)
 - Search tasks by keywords
 - Filter tasks: All, Active, Completed
+- Set repetitive tasks (Daily, Every 2 days, Weekly, Monthly)
 - Interactive calendar to view tasks by date
 - Dark mode toggle for night-time usage
-- Cute ASCII art on the home page
 - Responsive and visually appealing design
 
 ## ⋆˚࿔ Project Structure
